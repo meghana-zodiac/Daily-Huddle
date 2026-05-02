@@ -5,4 +5,7 @@ from shared import json_response, load_template
 
 class handler(BaseHTTPRequestHandler):
     def do_GET(self):
-        json_response(self, load_template())
+        try:
+            json_response(self, load_template())
+        except Exception as error:
+            json_response(self, {"error": str(error)}, status=500)
