@@ -1,6 +1,6 @@
 from http.server import BaseHTTPRequestHandler
 
-from shared import json_response, load_template
+from api.shared import json_response, load_template
 
 
 class handler(BaseHTTPRequestHandler):

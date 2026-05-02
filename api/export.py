@@ -1,7 +1,7 @@
 from datetime import date
 from http.server import BaseHTTPRequestHandler
 
-from shared import build_csv, fetch_submissions, text_response
+from api.shared import build_csv, fetch_submissions, text_response
 
 
 class handler(BaseHTTPRequestHandler):

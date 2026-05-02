@@ -1,7 +1,13 @@
 from datetime import UTC, datetime
 from http.server import BaseHTTPRequestHandler
 
-from shared import fetch_submissions, insert_submission, json_response, normalize_text, read_json_body
+from api.shared import (
+    fetch_submissions,
+    insert_submission,
+    json_response,
+    normalize_text,
+    read_json_body,
+)
 
 
 class handler(BaseHTTPRequestHandler):
