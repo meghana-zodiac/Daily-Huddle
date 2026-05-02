@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Huddle Entry</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">Zodiac HRC</p>
+          <h1>Daily Huddle Capture Desk</h1>
+          <p class="hero-copy">
+            A morning entry workspace that mirrors the Excel huddle sheet and sends every submission to Supabase.
+          </p>
+        </div>
+        <div class="hero-panel">
+          <p id="templateSummary" class="metric-label">Loading template…</p>
+          <p id="workbookName" class="metric-value">Daily Huddle Sheet.xlsx</p>
+          <a class="export-link" href="/api/export">Export submissions as CSV</a>
+        </div>
+      </header>
+
+      <main class="content-grid">
+        <section class="form-panel">
+          <div class="panel-head">
+            <div>
+              <p class="panel-kicker">Entry Form</p>
+              <h2>Employee morning update</h2>
+            </div>
+            <p id="statusMessage" class="status-message"></p>
+          </div>
+
+          <form id="entryForm">
+            <div class="identity-grid">
+              <label>
+                <span>Employee name</span>
+                <input id="employeeName" name="employeeName" type="text" placeholder="Enter employee name" required />
+              </label>
+              <label>
+                <span>Entry date</span>
+                <input id="entryDate" name="entryDate" type="date" required />
+              </label>
+            </div>
+
+            <div id="sectionsRoot" class="sections-root"></div>
+
+            <label class="notes-field">
+              <span>Notes</span>
+              <textarea id="notes" name="notes" rows="4" placeholder="Optional context, blockers, or comments"></textarea>
+            </label>
+
+            <div class="actions">
+              <button class="primary-btn" type="submit">Save daily entry</button>
+              <button class="ghost-btn" type="button" id="resetDraftButton">Clear draft</button>
+            </div>
+          </form>
+        </section>
+
+        <aside class="history-panel">
+          <div class="panel-head">
+            <div>
+              <p class="panel-kicker">Recent Entries</p>
+              <h2>Submission history</h2>
+            </div>
+          </div>
+          <div id="historyRoot" class="history-root"></div>
+        </aside>
+      </main>
+    </div>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>

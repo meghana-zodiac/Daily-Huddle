@@ -1,0 +1,103 @@
+{
+  "sheetName": "Sheet1",
+  "workbookName": "Daily Huddle Sheet.xlsx",
+  "fieldCount": 13,
+  "sections": [
+    {
+      "title": "Monthly Revenue",
+      "headers": ["Target", "Achived (Done + Pipeline)"],
+      "fields": [
+        {
+          "key": "monthly-revenue-value-2",
+          "label": "Value",
+          "rowNumber": 2,
+          "referenceValues": { "left": 509000, "right": 616420 }
+        },
+        {
+          "key": "monthly-revenue-number-3",
+          "label": "Number",
+          "rowNumber": 3,
+          "referenceValues": { "left": 14, "right": 3 }
+        },
+        {
+          "key": "monthly-revenue-achieved-4",
+          "label": "Achieved %",
+          "rowNumber": 4,
+          "referenceValues": { "left": 1.211, "right": null }
+        }
+      ]
+    },
+    {
+      "title": "Monthly Booking",
+      "headers": ["High", "Medium"],
+      "fields": [
+        {
+          "key": "monthly-booking-value-7",
+          "label": "Value",
+          "rowNumber": 7,
+          "referenceValues": { "left": 42000, "right": 25000 }
+        },
+        {
+          "key": "monthly-booking-number-8",
+          "label": "Number",
+          "rowNumber": 8,
+          "referenceValues": { "left": 2, "right": 1 }
+        },
+        {
+          "key": "monthly-booking-total-value-number-9",
+          "label": "Total (Value & Number)",
+          "rowNumber": 9,
+          "referenceValues": { "left": 67000, "right": 3 }
+        }
+      ]
+    },
+    {
+      "title": "Daily Activity 1",
+      "headers": ["Target", "Achieved"],
+      "fields": [
+        {
+          "key": "daily-activity-1-yesterday-s-poa-cv-12",
+          "label": "Yesterday's POA (CV #)",
+          "rowNumber": 12,
+          "referenceValues": { "left": 23, "right": 16 }
+        },
+        {
+          "key": "daily-activity-1-mtd-poa-cv-13",
+          "label": "MTD POA (CV #)",
+          "rowNumber": 13,
+          "referenceValues": { "left": 501, "right": 363 }
+        },
+        {
+          "key": "daily-activity-1-yesterday-s-initial-interview-14",
+          "label": "Yesterday's Initial Interview #",
+          "rowNumber": 14,
+          "referenceValues": { "left": 6, "right": 5 }
+        },
+        {
+          "key": "daily-activity-1-yesterday-s-final-interview-15",
+          "label": "Yesterday's Final Interview #",
+          "rowNumber": 15,
+          "referenceValues": { "left": 0, "right": 0 }
+        },
+        {
+          "key": "daily-activity-1-mtd-initial-interview-16",
+          "label": "MTD Initial Interview #",
+          "rowNumber": 16,
+          "referenceValues": { "left": 105, "right": 82 }
+        },
+        {
+          "key": "daily-activity-1-mtd-final-interview-17",
+          "label": "MTD Final Interview #",
+          "rowNumber": 17,
+          "referenceValues": { "left": 12, "right": 14 }
+        },
+        {
+          "key": "daily-activity-1-total-interviews-till-date-18",
+          "label": "TOTAL Interviews (till date)",
+          "rowNumber": 18,
+          "referenceValues": { "left": 117, "right": 96 }
+        }
+      ]
+    }
+  ]
+}
